@@ -5,21 +5,21 @@
 class Fresh < Formula
   desc "Git repository management CLI tool"
   homepage "https://github.com/jsmenzies/fresh"
-  version "1.2.5"
+  version "1.3.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/jsmenzies/fresh/releases/download/v1.2.5/fresh_1.2.5_darwin_amd64.tar.gz"
-      sha256 "b29b8006fa699a6c8f3308a84a87830ed7d43c358d5fecaee6ee84fcf1735e3d"
+      url "https://github.com/jsmenzies/fresh/releases/download/v1.3.0/fresh_1.3.0_darwin_amd64.tar.gz"
+      sha256 "8ec470e672e25d5e24f603bbf8c85608bd2e5b2bca88c6cdf3d3c916687681ed"
 
       def install
         bin.install "fresh"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/jsmenzies/fresh/releases/download/v1.2.5/fresh_1.2.5_darwin_arm64.tar.gz"
-      sha256 "5f418d445c8fbbaca4396a66befec00d7c1aa89423dcd22b7bacd02aedd60c30"
+      url "https://github.com/jsmenzies/fresh/releases/download/v1.3.0/fresh_1.3.0_darwin_arm64.tar.gz"
+      sha256 "38e7dfb3455315ac4c5b0e4592f41d33dbb45c24a3dbf8c9cfb36a33fcbfb13a"
 
       def install
         bin.install "fresh"
@@ -29,15 +29,15 @@ class Fresh < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/jsmenzies/fresh/releases/download/v1.2.5/fresh_1.2.5_linux_amd64.tar.gz"
-      sha256 "7d0da3db3d76a51602411e12cde54b33d1fdb2264edc0ba72a65d5fe44e00deb"
+      url "https://github.com/jsmenzies/fresh/releases/download/v1.3.0/fresh_1.3.0_linux_amd64.tar.gz"
+      sha256 "92feef8802b1d4cc64bd258a74e28c108989d7b6308b8b1630ddc9cc4d5cf28b"
       def install
         bin.install "fresh"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/jsmenzies/fresh/releases/download/v1.2.5/fresh_1.2.5_linux_arm64.tar.gz"
-      sha256 "7d2aae173832be4d6058f815959e1f57a8d6f438d5bcf5b84a06279a3563079e"
+      url "https://github.com/jsmenzies/fresh/releases/download/v1.3.0/fresh_1.3.0_linux_arm64.tar.gz"
+      sha256 "dc80e3026805696feb3918f317585e572671b794c153a6bc2cdac317aea2c1da"
       def install
         bin.install "fresh"
       end
