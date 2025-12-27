@@ -5,21 +5,21 @@
 class Fresh < Formula
   desc "A CLI tool for interactively managing the status of multiple Git repositories"
   homepage "https://github.com/jsmenzies/fresh"
-  version "1.7.2"
+  version "1.7.3"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/jsmenzies/fresh/releases/download/v1.7.2/fresh_1.7.2_darwin_amd64.tar.gz"
-      sha256 "ab5dab3b9dc397baf8377b20b2c9180bdb330b03006b8d68d2fac9b75a7b8e0c"
+      url "https://github.com/jsmenzies/fresh/releases/download/v1.7.3/fresh_1.7.3_darwin_amd64.tar.gz"
+      sha256 "7326969fbf7d7add5bcc66305b6416f91e59403c076efb7db37c452e9179278d"
 
       def install
         bin.install "fresh"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/jsmenzies/fresh/releases/download/v1.7.2/fresh_1.7.2_darwin_arm64.tar.gz"
-      sha256 "da30684ff842ca1adc939d665b14cbb6f3457ff8cca39880058e5c29e2732eb1"
+      url "https://github.com/jsmenzies/fresh/releases/download/v1.7.3/fresh_1.7.3_darwin_arm64.tar.gz"
+      sha256 "4fc4a40ff959e999b7685dc4c2a2694617667e1571e5b594a162041ec36c88a0"
 
       def install
         bin.install "fresh"
@@ -29,15 +29,15 @@ class Fresh < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/jsmenzies/fresh/releases/download/v1.7.2/fresh_1.7.2_linux_amd64.tar.gz"
-      sha256 "ca5037afbba4d73a39bc526566e6294f8d95970bd258395ab964e203d58b8f2b"
+      url "https://github.com/jsmenzies/fresh/releases/download/v1.7.3/fresh_1.7.3_linux_amd64.tar.gz"
+      sha256 "502a3e3ddca2495972e30a715e5650c92186d069711ffba9231913d5f329281d"
       def install
         bin.install "fresh"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/jsmenzies/fresh/releases/download/v1.7.2/fresh_1.7.2_linux_arm64.tar.gz"
-      sha256 "611566066a3ad4e98064aefcebb5cc28f4132ea9940f0267cf5d88378feb865a"
+      url "https://github.com/jsmenzies/fresh/releases/download/v1.7.3/fresh_1.7.3_linux_arm64.tar.gz"
+      sha256 "2484f8ab8c6908faade0fc07ec4c1f638b63aa406f282c954992359d3d87e4b5"
       def install
         bin.install "fresh"
       end
